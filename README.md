@@ -1,4 +1,4 @@
-spring-profiler
+spring-enricher
 ============
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.avides.spring/spring-enricher/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.avides.spring/spring-enricher)
