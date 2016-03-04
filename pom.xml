@@ -5,7 +5,7 @@
     <name>spring-enricher</name>
     <description>Enables enriching of objects in spring-projects</description>
     <url>https://github.com/avides/spring-enricher</url>
-    <version>0.0.1-RELEASE</version>
+    <version>0.0.2-RELEASE</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,7 +19,7 @@
             <id>mschumacher</id>
             <name>Martin Schumacher</name>
             <email>mschumacher@avides.com</email>
-            <organization>Avides MEDIA AG</organization>
+            <organization>AVIDES Media AG</organization>
             <organizationUrl>http://www.avides.com</organizationUrl>
             <roles>
                 <role>developer</role>
@@ -32,7 +32,7 @@
     </developers>
     
     <organization>
-        <name>Avides MEDIA AG</name>
+        <name>AVIDES Media AG</name>
         <url>http://www.avides.com</url>
     </organization>
 
@@ -155,6 +155,9 @@
                 <version>${cobertura.version}</version>
                 <configuration>
                     <format>xml</format>
+                    <instrumentation>
+                       <exclude>**/*Configuration.class</exclude>
+                    </instrumentation>
                 </configuration>
             </plugin>
             <plugin>
