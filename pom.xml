@@ -5,7 +5,7 @@
     <name>spring-enricher</name>
     <description>Enables enriching of objects in spring-projects</description>
     <url>https://github.com/avides/spring-enricher</url>
-    <version>0.0.2-RELEASE</version>
+    <version>0.0.1-RELEASE</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

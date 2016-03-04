@@ -11,6 +11,6 @@ spring-enricher
 <dependency>
     <groupId>com.avides.spring</groupId>
     <artifactId>spring-enricher</artifactId>
-    <version>0.0.2-RELEASE</version>
+    <version>0.0.1-RELEASE</version>
 </dependency>
 ```
