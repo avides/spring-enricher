@@ -3,15 +3,16 @@
     <groupId>com.avides.spring</groupId>
     <artifactId>spring-enricher</artifactId>
     <name>spring-enricher</name>
-    <description>Enables enriching of objects in spring-projects</description>
+    <description>Enables simple enriching of objects in spring-projects</description>
     <url>https://github.com/avides/spring-enricher</url>
-    <version>0.0.1-RELEASE</version>
+    <version>1.0.1.RELEASE</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <cobertura.version>2.7</cobertura.version>
         <coveralls.version>4.1.0</coveralls.version>
+        <assertj.version>3.8.0</assertj.version>
     </properties>
     
     <developers>
@@ -89,9 +90,27 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.easytesting</groupId>
-            <artifactId>fest-assert</artifactId>
-            <version>1.4</version>
+            <groupId>org.easymock</groupId>
+            <artifactId>easymock</artifactId>
+            <version>3.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <version>1.7.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-easymock</artifactId>
+            <version>1.7.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

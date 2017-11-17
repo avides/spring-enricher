@@ -1,4 +1,4 @@
-package com.avides.spring.enricher;
+package com.avides.spring.enricher.configuration;
 
 import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Import;
 
 /**
  * @author Martin Schumacher
+ * @since 1.0.0.RELEASE
  */
 @Retention(RUNTIME)
 @Target(TYPE)

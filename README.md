@@ -11,6 +11,71 @@ spring-enricher
 <dependency>
     <groupId>com.avides.spring</groupId>
     <artifactId>spring-enricher</artifactId>
-    <version>0.0.1-RELEASE</version>
+    <version>1.0.1.RELEASE</version>
 </dependency>
+```
+#### Example
+```java
+@Configuration
+@EnableEnriching
+public class EnricherConfiguration
+{
+}
+
+@Service
+public class CustomerService
+{
+    @Autowired
+    private CustomerRepository customerRepository;
+
+    @Enriched
+    public Customer getCustomer(long id)
+    {
+        return customerRepository.getCustomer(id);
+    }
+    
+    @Enriched
+    public List<Customer> getCustomers()
+    {
+        return customerRepository.getCustomers();
+    }
+}
+
+@Component
+public class CustomerEnricher extends AbstractEnricher<Customer>
+{
+    @Autowired
+    private AddressService addressService;
+
+    public CustomerEnricher()
+    {
+        super(Customer.class);
+    }
+    
+    @Override
+    public void doEnrich(Customer customer)
+    {
+        customer.setAddresses(addressService.getAddresses(customer.getId()));
+    }
+}
+
+@Component
+public class CustomerOutput
+{
+    @Autowired
+    private CustomerService customerService;
+    
+    public void outputCustomers()
+    {
+        for (Customer customer : customerService.getCustomers())
+        {
+            System.out.println(customer);
+        }
+    }
+    
+    public void outputCustomer(long id)
+    {
+        System.out.println(customerService.getCustomer(id));
+    }
+}
 ```
