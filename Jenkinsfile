@@ -56,7 +56,7 @@ pipeline
         {
             steps
             {
-                sh 'mvn clean compile sonar:sonar -Dsonar.host.url=http://sonarqube.avidesmedia/'
+                sh 'mvn clean verify sonar:sonar -Dsonar.host.url=http://sonarqube.avidesmedia/'
             }
         } 
     }
