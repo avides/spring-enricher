@@ -3,4 +3,4 @@ jdk:
   - oraclejdk8
 install: mvn package -Dgpg.skip=true
 after_success:
-  - mvn clean test cobertura:cobertura coveralls:report
+  - mvn clean verify cobertura:cobertura coveralls:report
