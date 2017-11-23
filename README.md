@@ -2,7 +2,7 @@ spring-enricher
 ============
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.avides.spring/spring-enricher/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.avides.spring/spring-enricher)
-[![Codacy Badge](https://api.codacy.com/project/badge/grade/49fe00fd4ec843b6ac21b2d3996f2de9)](https://www.codacy.com/app/developer_6/spring-enricher)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/214f252432944f9ea163be71e9a775c2)](https://www.codacy.com/app/avides-builds/spring-enricher?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=avides/spring-enricher&amp;utm_campaign=Badge_Grade)
 [![Coverage Status](https://coveralls.io/repos/github/avides/spring-enricher/badge.svg?branch=master)](https://coveralls.io/github/avides/spring-enricher?branch=master)
 [![Build Status](https://travis-ci.org/avides/spring-enricher.svg?branch=master)](https://travis-ci.org/avides/spring-enricher)
 
