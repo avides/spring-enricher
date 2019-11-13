@@ -7,15 +7,13 @@ import static org.powermock.api.easymock.PowerMock.verifyAll;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.powermock.api.easymock.annotation.Mock;
+import org.powermock.api.easymock.annotation.MockStrict;
 import org.powermock.modules.junit4.PowerMockRunner;
-
-import com.avides.spring.enricher.enricher.Enricher;
 
 @RunWith(PowerMockRunner.class)
 public class EnricherTest
 {
-    @Mock
+    @MockStrict
     private AnyService anyService;
 
     @Test
@@ -30,6 +28,6 @@ public class EnricherTest
 
     private interface AnyService
     {
-        public String getData();
+        String getData();
     }
 }

@@ -17,7 +17,7 @@ import org.easymock.TestSubject;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.powermock.api.easymock.annotation.Mock;
+import org.powermock.api.easymock.annotation.MockStrict;
 import org.powermock.modules.junit4.PowerMockRunner;
 
 import com.avides.spring.enricher.annotation.Enriched;
@@ -30,10 +30,10 @@ public class EnrichedExecutorTest extends EnrichingTestSupport
     @TestSubject
     private EnrichedExecutor enrichedExecutor = new EnrichedExecutor();
 
-    @Mock
+    @MockStrict
     private EnricherService enricherService;
 
-    @Mock
+    @MockStrict
     private ProceedingJoinPoint pjp;
 
     @Before
