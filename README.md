@@ -34,7 +34,7 @@ public class CustomerService
     {
         return customerRepository.getCustomer(id);
     }
-    
+
     @Enriched
     public List<Customer> getCustomers()
     {
@@ -52,7 +52,7 @@ public class CustomerEnricher extends AbstractEnricher<Customer>
     {
         super(Customer.class);
     }
-    
+
     @Override
     public void doEnrich(Customer customer)
     {
@@ -65,7 +65,7 @@ public class CustomerOutput
 {
     @Autowired
     private CustomerService customerService;
-    
+
     public void outputCustomers()
     {
         for (Customer customer : customerService.getCustomers())
@@ -73,7 +73,7 @@ public class CustomerOutput
             System.out.println(customer);
         }
     }
-    
+
     public void outputCustomer(long id)
     {
         System.out.println(customerService.getCustomer(id));
